@@ -82,6 +82,8 @@ namespace Dna
                         //
                         // The user is free to override this default behavior
                         //
+                        // Notice that the attempt to connect and get a response 
+                        // could get quite some time
                         webResponse = await WebRequests.GetAsync(Endpoint);
                     }
                     catch (Exception ex)
